@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Debate Intelligence Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>🧠 AI Debate</h2>
+            <button id="recordBtn">🎤 Start</button>
+            <button onclick="saveSession()">💾 Save Session</button>
+            <button onclick="clearTranscript()">🗑 Clear</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main">
+
+            <h1>AI Debate Intelligence Analyzer</h1>
+
+            <!-- Live Speech -->
+            <div class="card">
+                <h2>🎤 Live Speech</h2>
+                <div id="transcript" contenteditable="true">Start speaking...</div>
+
+                <div class="controls">
+                    <button onclick="copyText()">📋 Copy</button>
+                    <button onclick="downloadText()">⬇ Save Text</button>
+                </div>
+            </div>
+
+            <!-- Argument Structure -->
+            <div class="card">
+                <h2>🧠 Argument Structure</h2>
+                <div id="argumentStructure"></div>
+            </div>
+
+            <!-- Logical Fallacies -->
+            <div class="card">
+                <h2>❌ Logical Fallacies</h2>
+                <div id="fallacies"></div>
+            </div>
+
+            <!-- Analysis -->
+            <div class="card">
+                <h2>📊 Statistics</h2>
+                <p>WPM: <span id="wpm">0</span></p>
+                <p>Confidence: <span id="confidence">0</span>%</p>
+                <p>Tone: <span id="tone">Neutral</span></p>
+                <p>AI Score: <span id="aiScore">0</span></p>
+
+                <div class="progress">
+                    <div id="strengthBar"></div>
+                </div>
+            </div>
+
+            <!-- Replay System -->
+            <div class="card">
+                <h2>🔁 Replay System</h2>
+                <button id="startReplay">Start Replay</button>
+                <div id="replayArea"></div>
+                <div id="annotationArea"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
