@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #f5f7fa;
+}
+
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #1e293b;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    background: #3b82f6;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background: #2563eb;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Transcript */
+#transcript {
+    min-height: 120px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* Controls */
+.controls button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    background: #10b981;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background: #059669;
+}
+
+/* Argument Colors */
+.claim {
+    color: green;
+    font-weight: bold;
+}
+
+.reason {
+    color: blue;
+    font-weight: bold;
+}
+
+.evidence {
+    color: purple;
+    font-weight: bold;
+}
+
+.counter {
+    color: orange;
+    font-weight: bold;
+}
+
+/* Fallacies */
+.fallacy {
+    color: red;
+    font-weight: bold;
+}
+
+/* Progress */
+.progress {
+    height: 8px;
+    background: #ddd;
+    border-radius: 10px;
+}
+
+#strengthBar {
+    height: 100%;
+    width: 0%;
+    background: green;
+}
+
+/* Replay System */
+#replayArea {
+    margin-top: 10px;
+    font-size: 16px;
+    min-height: 40px;
+}
+
+#annotationArea {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #ff4500;
+    min-height: 20px;
+}
